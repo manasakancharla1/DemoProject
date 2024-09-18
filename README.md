@@ -100,4 +100,3 @@ MONGODB_URI= your data base url
 
 ---
 
-Thank you for using AlgoWise Technologies!
