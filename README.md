@@ -21,15 +21,15 @@ AlgoWise Technologies is a web platform for browsing job listings and trending c
  
  *For the backend*:
  
-   cd backend
+   # cd backend
    
-   npm install
+   # npm install
 
  *For the frontend*:
  
-   cd ../frontend
+   # cd ../frontend
    
-   npm install
+   # npm install
 
 **Create a .env File**:
 
@@ -37,7 +37,7 @@ In the backend directory, create a .env file to store your environment variables
 
 *Add the following content to .env*:
 
-  MONGO_URI=mongodb://localhost:27017/jobCoursesDB
+  # MONGO_URI=mongodb://localhost:27017/jobCoursesDB
   PORT=5000
   
 **Create a .gitignore File**:
@@ -70,11 +70,11 @@ Ensure that .env and other sensitive or unnecessary files are excluded by adding
 
 *Navigate to the backend directory*:
 
-cd backend
+# cd backend
 
 *Start the Backend Server*:
 
-npm start
+# npm start
 
 The backend server will run on port 5000 by default.
 
@@ -82,11 +82,11 @@ The backend server will run on port 5000 by default.
 
 *Navigate to the frontend directory*:
 
-cd ../frontend
+# cd ../frontend
 
 *Start the Frontend Server*:
 
-npm start
+# npm start
 
 The frontend application will run on port 3000 by default.
 
