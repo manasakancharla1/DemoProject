@@ -1,137 +1,104 @@
 ﻿# DemoProject
 # DemoProject
 
-## Project Overview
-AlgoWise Technologies is a web platform for browsing job listings and trending courses. It includes a ReactJS frontend and a Node.js backend with MongoDB for storing data.
+## Overview
 
-## Setup Instructions
+AlgoWise Technologies is a web application designed to help users explore job opportunities and trending courses. This project features a ReactJS frontend and a Node.js backend, providing a seamless experience for users to browse and filter job listings and courses.
+
+## Project Structure
+
+The project is organized into two main parts:
+
+- **Frontend**: Built with ReactJS, this part handles the user interface and user interactions.
+- **Backend**: Developed using Node.js and Express, this part manages API endpoints and interacts with the MongoDB database.
+
+## Features
+
+- **Job Listings**: Browse and filter available job opportunities.
+- **Trending Courses**: Explore courses to enhance skills and advance careers.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+- **User Authentication**: Sign up and sign in functionalities.
+
+## Installation
 
 ### Prerequisites
-- Node.js (v14+)
-- MongoDB (local or cloud instance)
-- Git
 
-### Steps to Set Up the Project Locally
-1. **Clone the repository**:
+- Node.js (v14 or higher)
+- MongoDB (v4.4 or higher)
+
+### Frontend
+
+1. Clone the repository:
+
    ```bash
    git clone https://github.com/manasakancharla1/DemoProject.git
-   cd DemoProject
-   
-2.  Install Dependencies:
- 
- *For the backend*:
- 
-   # cd backend
-   
-   # npm install
+   cd DemoProject/frontend
+   ```
 
- *For the frontend*:
- 
-   # cd ../frontend
-   
-   # npm install
+2. Install dependencies:
 
-**Create a .env File**:
+   ```bash
+   npm install
+   ```
 
-In the backend directory, create a .env file to store your environment variables.
+3. Start the development server:
 
-*Add the following content to .env*:
+   ```bash
+   npm start
+   ```
 
-  ** MONGO_URI=your mongo db database url **
-  PORT=5000
-  
-**Create a .gitignore File**:
+   The frontend will be available at `http://localhost:3000`.
 
-Ensure that .env and other sensitive or unnecessary files are excluded by adding them to your .gitignore file in the root of the project:
+### Backend
 
-  # Node modules directory
-    node_modules/
+1. Navigate to the backend directory:
 
-  # Environment variable files
-    .env
+   ```bash
+   cd ../backend
+   ```
 
-  # Build output directories
-    dist/
-    build/
+2. Install dependencies:
 
-   # Logs
-     *.log
+   ```bash
+   npm install
+   ```
 
-   # OS-specific files
-    Thumbs.db
-    .DS_Store
+3. Start the backend server:
 
-    # IDE/Editor settings
-      .vscode/
-       .idea/
-**Running the Project**
+   ```bash
+   npm start
+   ```
 
-**Backend**
+   The backend API will be available at `http://localhost:5000`.
 
-*Navigate to the backend directory*:
+4. Make sure MongoDB is running locally or configure the `MONGODB_URI` in the `.env` file to connect to your MongoDB instance.
 
-# cd backend
+## API Endpoints
 
-*Start the Backend Server*:
+- **GET** `/api/jobs` - Fetch all job listings.
+- **GET** `/api/jobs/:id` - Fetch a specific job by ID.
+- **GET** `/api/courses` - Fetch all courses.
+- **GET** `/api/courses/:id` - Fetch a specific course by ID.
+- **POST** `/api/signup` - Register a new user.
+- **POST** `/api/signin` - Authenticate a user.
 
-# npm start
+## Configuration
 
-The backend server will run on port 5000 by default.
+Create a `.env` file in the `backend` directory with the following content:
 
-**Frontend**
+```dotenv
+MONGODB_URI=mongodb://localhost:27017/jobCoursesDB
+JWT_SECRET=your_jwt_secret
+```
 
-*Navigate to the frontend directory*:
+## Contributing
 
-# cd ../frontend
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a new Pull Request.
 
-*Start the Frontend Server*:
+---
 
-# npm start
-
-The frontend application will run on port 3000 by default.
-
-**API Documentation**
-
-Endpoints
-
-GET /api/jobs: Fetches a list of job listings.
-
-GET /api/courses: Fetches a list of trending courses.
-
-POST /api/users/signup: Registers a new user.
-
-POST /api/users/signin: Authenticates a user and returns a token.
-
-
-**Dependencies**
-
-**Backend**:
-
-express: Fast web framework for Node.js
-
-mongoose: MongoDB object modeling tool
-
-dotenv: Loads environment variables from a .env file
-
-**Frontend**:
-
-react: JavaScript library for building user interfaces
-
-react-router-dom: Routing library for React
-
-bootstrap: CSS framework for responsive design
-
-
-**Troubleshooting**
-
-Issue: "Module not found" error
-
-Ensure all dependencies are installed by running npm install in both frontend and backend directories.
-
-Issue: "Failed to connect to MongoDB"
-
-Verify that MongoDB is running and the connection URI in the .env file is correct.
-Issue: Port conflict
-
-Ensure that ports 3000 and 5000 are not being used by other applications. You can change the port in the .env file if needed.
-
+Thank you for using AlgoWise Technologies!
