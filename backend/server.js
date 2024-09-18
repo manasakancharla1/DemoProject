@@ -24,11 +24,16 @@ const limiter = rateLimit({
 });
 app.use(limiter);
 
+// Load environment variables from .env file
+require('dotenv').config();
+
 // Connect to MongoDB
-const mongoURI = 'mongodb://localhost:27017/jobCoursesDB';  // Use a single MongoDB URI
+const mongoURI = process.env.MONGO_URI;  // Use the URI from the .env file
+
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected'))
   .catch((err) => console.error('MongoDB connection error:', err));
+
 // Define Job schema and model
   const jobSchema = new mongoose.Schema({
     title: { type: String, required: true },
