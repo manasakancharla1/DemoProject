@@ -37,7 +37,7 @@ In the backend directory, create a .env file to store your environment variables
 
 *Add the following content to .env*:
 
-  # MONGO_URI=mongodb://localhost:27017/jobCoursesDB
+  ** MONGO_URI=mongodb://localhost:27017/jobCoursesDB**
   PORT=5000
   
 **Create a .gitignore File**:
