@@ -72,6 +72,8 @@ GET /api/jobs: Fetches a list of job listings.
 GET /api/courses: Fetches a list of trending courses.
 POST /api/users/signup: Registers a new user.
 POST /api/users/signin: Authenticates a user and returns a token.
+
+
 **Dependencies**
 **Backend**:
 express: Fast web framework for Node.js
@@ -81,6 +83,8 @@ dotenv: Loads environment variables from a .env file
 react: JavaScript library for building user interfaces
 react-router-dom: Routing library for React
 bootstrap: CSS framework for responsive design
+
+
 **Troubleshooting**
 Issue: "Module not found" error
 Ensure all dependencies are installed by running npm install in both frontend and backend directories.
