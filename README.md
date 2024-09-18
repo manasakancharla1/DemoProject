@@ -87,8 +87,7 @@ The project is organized into two main parts:
 Create a `.env` file in the `backend` directory with the following content:
 
 ```dotenv
-MONGODB_URI=mongodb://localhost:27017/jobCoursesDB
-JWT_SECRET=your_jwt_secret
+MONGODB_URI= your data base url
 ```
 
 ## Contributing
