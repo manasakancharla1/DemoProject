@@ -75,10 +75,12 @@ POST /api/users/signin: Authenticates a user and returns a token.
 
 
 **Dependencies**
+
 **Backend**:
 express: Fast web framework for Node.js
 mongoose: MongoDB object modeling tool
 dotenv: Loads environment variables from a .env file
+
 **Frontend**:
 react: JavaScript library for building user interfaces
 react-router-dom: Routing library for React
