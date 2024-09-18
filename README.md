@@ -18,13 +18,17 @@ AlgoWise Technologies is a web platform for browsing job listings and trending c
    cd DemoProject
    
 2.  Install Dependencies:
-3.  
+ 
  *For the backend*:
+ 
    cd backend
+   
    npm install
 
  *For the frontend*:
+ 
    cd ../frontend
+   
    npm install
 
 **Create a .env File**:
@@ -37,7 +41,9 @@ In the backend directory, create a .env file to store your environment variables
   PORT=5000
   
 **Create a .gitignore File**:
+
 Ensure that .env and other sensitive or unnecessary files are excluded by adding them to your .gitignore file in the root of the project:
+
   # Node modules directory
     node_modules/
 
