@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min'; // Import Bootstrap's JavaScript and Popper.js
 import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome CSS
 import './Header.css';
 
