@@ -54,23 +54,34 @@ Ensure that .env and other sensitive or unnecessary files are excluded by adding
 **Running the Project**
 **Backend**
 *Navigate to the backend directory*:
+
 cd backend
+
 *Start the Backend Server*:
+
 npm start
+
 The backend server will run on port 5000 by default.
 
 **Frontend**
 *Navigate to the frontend directory*:
+
 cd ../frontend
+
 *Start the Frontend Server*:
+
 npm start
+
 The frontend application will run on port 3000 by default.
 
 **API Documentation**
 Endpoints
 GET /api/jobs: Fetches a list of job listings.
+
 GET /api/courses: Fetches a list of trending courses.
+
 POST /api/users/signup: Registers a new user.
+
 POST /api/users/signin: Authenticates a user and returns a token.
 
 
@@ -78,18 +89,24 @@ POST /api/users/signin: Authenticates a user and returns a token.
 
 **Backend**:
 express: Fast web framework for Node.js
+
 mongoose: MongoDB object modeling tool
+
 dotenv: Loads environment variables from a .env file
 
 **Frontend**:
 react: JavaScript library for building user interfaces
+
 react-router-dom: Routing library for React
+
 bootstrap: CSS framework for responsive design
 
 
 **Troubleshooting**
 Issue: "Module not found" error
+
 Ensure all dependencies are installed by running npm install in both frontend and backend directories.
+
 Issue: "Failed to connect to MongoDB"
 
 Verify that MongoDB is running and the connection URI in the .env file is correct.
